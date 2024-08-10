@@ -20,9 +20,9 @@
 <body>
 <!--<audio src="music/4.mp3" autoplay="autoplay" loop="loop"></audio>-->
 <!--对应_自动播放js3-->
-  <audio autoplay="autopaly" loop="loop" id="audios">
-      <source src="music/4.mp3" type="audio/mp3" />
-    </audio>
+<audio autoplay="autopaly" loop="loop" id="audios">
+ <source src="music/4.mp3" type="audio/mp3" />
+</audio>
 
 
 <div id="fullpage">
@@ -248,8 +248,24 @@
 		
  </div>  
 	
+	<!-- 这是v1.11.0的jquery -->
+  <script src='js/jquery.js'></script>
+  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script src="js/jquery.lazylinepainter-1.7.0.min.js"></script>
+  <script type="text/javascript" src="js/svg.js"></script>  
+  <script type="text/javascript" src="js/index.js"></script>
+  <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+	<!--  <script src="vendors/jquery.easings.min.js"></script>-->
+	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
+	<!-- <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>-->
+	 
+
+
+
+
+</body>
 <!--自动播放js3-->
-<!-- <script>
+ <script>
 function audioAutoPlay(id){  
 
     var audio = document.getElementById(id),
@@ -288,22 +304,6 @@ function audioAutoPlay(id){  
 
 audioAutoPlay('audios');
 
- </script>-->	
-	<!-- 这是v1.11.0的jquery -->
-  <script src='js/jquery.js'></script>
-  <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script src="js/jquery.lazylinepainter-1.7.0.min.js"></script>
-  <script type="text/javascript" src="js/svg.js"></script>  
-  <script type="text/javascript" src="js/index.js"></script>
-  <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
-	<!--  <script src="vendors/jquery.easings.min.js"></script>-->
-	<!-- This following line is only necessary in the case of using the plugin option `scrollOverflow:true` -->
-	<!-- <script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>-->
-	 
-
-
-
-
-</body>
+ </script>
 
 </html>
