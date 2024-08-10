@@ -65,7 +65,7 @@ background: linear-gradient(#000000, #333333); /* 添加渐变效果 */
   <!--对应_自动播放js3-->
   <audio autoplay="autopaly" loop="loop" id="audios">
       <source src="audio/happy.mp3" type="audio/mp3" />
-    </audio>
+  </audio>
   <div id="particle-container">
     <canvas id="particle-canvas"></canvas>
   </div>
@@ -79,26 +79,45 @@ background: linear-gradient(#000000, #333333); /* 添加渐变效果 */
   </div>
  
   <script>
-  <!--自动播放js3-->
-  function audioAutoPlay(id){  
+ <!--自动播放js3-->
+function audioAutoPlay(id){  
+
     var audio = document.getElementById(id),
+
         play = function(){  
+
             audio.play();  
+
             document.removeEventListener("touchstart",play, false);  
+
         };  
+
     audio.play();  
+
     document.addEventListener("WeixinJSBridgeReady", function () {  
+
         play();  
+
     }, false);  
+
     document.addEventListener('YixinJSBridgeReady', function() {  
+
         play();  
+
     }, false);
+ 
     document.addEventListener('touchstart', function() {  
+
         play();  
+
     }, false); 
+
     document.addEventListener("click",play, false);  
+
 }  
+
 audioAutoPlay('audios');
+
 
 	  
     // 生成粒子效果
