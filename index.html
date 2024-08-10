@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!--我的html meta viewport，定义 id，下面有用-->
   <meta name="viewport" id="view" content="width=device-width, initial-scale=1.0, user-scalable=yes" /> 
  	
   <meta charset="UTF-8">
@@ -66,7 +67,7 @@ background: linear-gradient(#000000, #333333); /* 添加渐变效果 */
   
 <script type="text/javascript">
     
-//获取设备类型
+<!--获取设备类型-->
  
 	var ua = navigator.userAgent;
  
@@ -78,15 +79,15 @@ background: linear-gradient(#000000, #333333); /* 添加渐变效果 */
  
 	isMobile = isIphone || isAndroid;
  
-	//判断
+	<!--判断-->
  
 	if(isMobile){
-//获取设备像素
+<!--获取设备像素-->
 	    var devicewidth = document.documentElement.clientWidth;
 	    var devicewidth2 = window.screen.width;
 	    console.log(devicewidth2);
 	    console.log(devicewidth);
-//按照比例 设置id为view的content值为scale，ok
+<!--按照比例 设置id为view的content值为scale，ok-->
 	    var scale = devicewidth / 1200; //1200是我原本设计PC页面固定的大小，根据你自己页面进行修改
 	    console.log(scale);
  
