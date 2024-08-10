@@ -47,11 +47,16 @@
         </div>
     </div>
 
-    <!--自动播放js3-->
-    <!--<script>
-     function audioAutoPlay(id){  
+ 
+    <script src="js/index.js"></script>
 
-      var audio = document.getElementById(id),
+</body>
+    
+<!--自动播放js3-->
+ <script>
+function audioAutoPlay(id){  
+
+    var audio = document.getElementById(id),
 
         play = function(){  
 
@@ -61,36 +66,32 @@
 
         };  
 
-     audio.play();  
+    audio.play();  
 
-     document.addEventListener("WeixinJSBridgeReady", function () {  
-
-        play();  
-
-     }, false);  
-
-     document.addEventListener('YixinJSBridgeReady', function() {  
+    document.addEventListener("WeixinJSBridgeReady", function () {  
 
         play();  
 
-     }, false);
+    }, false);  
+
+    document.addEventListener('YixinJSBridgeReady', function() {  
+
+        play();  
+
+    }, false);
  
-     document.addEventListener('touchstart', function() {  
+    document.addEventListener('touchstart', function() {  
 
         play();  
 
-     }, false); 
+    }, false); 
 
-     document.addEventListener("click",play, false);  
+    document.addEventListener("click",play, false);  
 
- }  
+}  
 
 audioAutoPlay('audios');
 
- </script>-->
- 
-    <script src="js/index.js"></script>
-
-</body>
+ </script>
 
 </html>
