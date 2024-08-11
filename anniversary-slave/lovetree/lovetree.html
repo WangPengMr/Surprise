@@ -2,9 +2,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <!--<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">-->
-    <meta charset="UTF-8">
-    <meta name="viewport" id="view" http-equiv="Content-Type" content="text/html, initial-scale=1.0, user-scalable=yes" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>for 万万</title>
     <link type="text/css" rel="stylesheet" href="zhirong/default.css">
     <script type="text/javascript" src="zhirong/jquery.min.js"></script>
@@ -204,38 +202,5 @@
     </script>
 
 </body>
-<script type="text/javascript">
-    
-    //获取设备类型
- 
-	var ua = navigator.userAgent;
- 
-	var ipad = ua.match(/(iPad).*OS\s([\d_]+)/),
- 
-	isIphone =!ipad && ua.match(/(iPhone\sOS)\s([\d_]+)/),
- 
-	isAndroid = ua.match(/(Android)\s+([\d.]+)/),
- 
-	isMobile = isIphone || isAndroid;
- 
-	//判断
- 
-	if(isMobile){
-        //获取设备像素
-	    var devicewidth = document.documentElement.clientWidth;
-	    var devicewidth2 = window.screen.width;
-	    console.log(devicewidth2);
-	    console.log(devicewidth);
-        //按照比例 设置id为view的content值为scale，ok
-	    var scale = devicewidth / 1200; //1200是我原本设计PC页面固定的大小，根据你自己页面进行修改
-	    console.log(scale);
- 
-	  	document.getElementById("view").setAttribute('content',"user-scalable=yes, width=device-width, initial-scale="+scale);
- 
-	}else{
- 
-	}
- 
-  </script>
 
 </html>
